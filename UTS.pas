@@ -9,7 +9,7 @@ var
 (* deklarasikan variabel yang diperlukan *)
     nama : string;
     jumlahBuku, lamaPeminjaman, i : integer;
-    jenisBuku : char;
+    judulBuku, jenisBuku : char;
     denda, totalDenda : longint;
     
 begin
@@ -35,8 +35,8 @@ begin
 
     (* Gunakan perulangan untuk meminta data setiap buku yang dipinjam *)
         (* Input judul buku *)
-        write('Masukkan jenisBuku : ');
-        readln (jenisBuku);
+        write('Masukkan judulBuku : ');
+        readln (judulBuku);
 
         (* Input jenis buku (F=Fiksi, N=Nonfiksi, R=Referensi) dengan validasi agar hanya huruf tersebut yang diterima *)
         repeat
